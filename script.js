@@ -454,25 +454,23 @@ $(function () {
         const userLetter = userInput.toUpperCase();
 
         const regexPattern = /^[a-zA-Z]{1}$/;
-
         const regexCheck = regexPattern.exec(userLetter);
+        const userChoice = letter[userLetter];
         
-
         console.log(regexCheck);
 
+        // regexCheck !== null
+        // userLetter !== undefined
 
-        if (userLetter !== '' || regexCheck !== null ) {
+
+        if (userLetter !== '' && regexCheck !== null) {
 
             $('input[type=text]').val('');
-            const userChoice = letter[userLetter];
             const result = userChoice[Math.floor(Math.random() * userChoice.length)];
-    
-            $('.result').html(`<h2>You choose the letter ${userLetter}.</h2><h3><strong>${userLetter}</strong> is for "${result.word}". ${result.example}</h3>`)
-        
-        
+
+            $('.result').html(`<h2>You choose the letter ${userLetter}.</h2><h3><strong>${userLetter}</strong> is for "${result.word}". ${result.example}</h3><h4>Press the button again for another example or type in a new letter!</h4>`)
         } else {
-            console.log('show error');
-            $('.result').html(`<h2>${userLetter} is invalid response please type in only one letter!</h3>`)
+            $('.result').html(`<h2>Please type in one letter!</h3>`)
         }
         
 

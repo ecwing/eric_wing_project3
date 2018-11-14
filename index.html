@@ -9,19 +9,22 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+
 <h1>P for Pneumonia</h1>
 <h2>The Worst Web Application to Learn the Alphabet Ever</h2>
-<div class="results"></div>
+
 
 <form action="">
-        <p><i class="fa fa-coffee animated shake infinite"></i> Please type in a letter</p>
-        <label for="coffee">Input a Letter</label>
-        <input type="text">
-        <div class="submit-container">
+
+        <label for="coffee">Type in a Letter</label>
+        <input type="text" max="1">
+
+        <div>
             <input type="submit" name="letter" value="Show me a Word!">
         </div>
+        
         <div class="result"></div>
-    </fieldset>
+
 </form>
 
 
@@ -32,5 +35,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 <script src="script.js"></script>
+
 </body>
 </html>
