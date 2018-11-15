@@ -10,13 +10,11 @@
 
 
 
+// 1. Option 1: User input a value (must be a letter from A-Z) Program will spit out a random word that starts with that letter
+// 2. Option 2: Program will spit out any random letter and any random word
+// 3. iterate through the entire alphabet grabbing a random word for each
 
-
-
-
-// 1. User input a value (must be a letter from A-Z)
-// 2. Program will spit out a random word that starts with that letter
-
+// Creates an letter object containing an array of all 24 letters in the alphabet which contains within it objects of different words and their examples as their key value pairs
 const letter = {
 
     A: [ 
@@ -440,46 +438,33 @@ const letter = {
     ]
 };
 
-
 $(function () {
 
-
     $('form').on('submit', function (e) {
+        //prevent default action of the form(refresh page)
         e.preventDefault();
-        
         // Captures value of the form
         const userInput = $('input').val();
-        
         //If user input is lowercase letter changes to uppercase (error handling)
         const userLetter = userInput.toUpperCase();
-
+        //set a predefined pattern to check later to handle unintended user input (number(s), more than 1 letter, special characters etc.)
         const regexPattern = /^[a-zA-Z]{1}$/;
         const regexCheck = regexPattern.exec(userLetter);
         const userChoice = letter[userLetter];
-        
-        console.log(regexCheck);
-
-        // regexCheck !== null
-        // userLetter !== undefined
-
-
+        //if the user input meets the specific requirements only then run the function of output
         if (userLetter !== '' && regexCheck !== null) {
-
+            //resets the input field to blank once letter choice has been made
             $('input[type=text]').val('');
+            //selects a random word in the specified word array from user
             const result = userChoice[Math.floor(Math.random() * userChoice.length)];
-
+            // outputs to the DOM the results as well as the example
             $('.result').html(`<h2>You choose the letter ${userLetter}.</h2><h3><strong>${userLetter}</strong> is for "${result.word}". ${result.example}</h3><h4>Press the button again for another example or type in a new letter!</h4>`)
+        //if the user inputs an invalid character(s) then default message will appear to warn user to try again
         } else {
-            $('.result').html(`<h2>Please type in one letter!</h3>`)
+            $('.result').html(`<h2>Sorry that's not a valid response...Please type in one only letter!</h3>`)
         }
         
-
-
     });
-
-
-
-
 });
 
 
