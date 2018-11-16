@@ -5,7 +5,7 @@ html {
 body {
     background: skyblue;
     text-align: center;
-    // font-size: 62.5%;
+
 
 }
 
@@ -23,7 +23,7 @@ h1 {
     @include font-size(50);
     font-family: 'Spicy Rice', cursive;
     margin: 0;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 h2,h3,p {
@@ -32,14 +32,20 @@ h2,h3,p {
 
 .box {
     background: pink;
-    height: 60vh;
+    height: auto;
     width: 300px;
     margin: 0 auto;
     border: violet 5px dotted;
 }
 
+.random {
+    background: lightblue;
+    border: 5px dashed tomato;
+    
+}
+
 form {
-    padding: 50px;
+    padding: 20px;
 }
 
 input[type=submit] {
@@ -54,3 +60,7 @@ input[type=submit] {
   color: black;
   text-decoration: none;
 }
+
+// proper layout
+// proper indentation
+// responsive

@@ -59,7 +59,7 @@ const letter = {
 
         {
             word: 'czar',
-            example: 'Toronto is hiring a Transit Czar.'
+            example: 'Toronto is hiring a Transit Czar...to do what exactly? Where was this years ago? We needed that relief line years ago! Crazy...'
         },
 
         {
@@ -69,223 +69,223 @@ const letter = {
 
         {
             word: 'chthononosology',
-            example: 'Are the Argyle shirts down the aisle?'
+            example: 'Hey doctor C, can you please explain what chthononosology is?'
         },
 
         {
             word: 'cede',
-            example: 'Are the Argyle shirts down the aisle?'
+            example: 'To cede power he gave his own seed, his precious cherry seeds'
         },        
 
         {
             word: 'colenol',
-            example: 'Aresenic is poisonous?'
+            example: 'The Colenol was curious about the cat'
         },
 
         {
             word: 'corps',
-            example: 'Aresenic is poisonous?'
+            example: 'The marine corps is an intense military unit.'
         },
 
         {
             word: 'cough',
-            example: 'Aresenic is poisonous?'
+            example: 'During the winter he developed a bad cough...on another note, how would one spell out the most average vocalization of a cough with letters? Would it be something like "KFHFHHFFKHFH"....that\'s my take'
         },        
 
         {
             word: 'champagne',
-            example: 'Aresenic is poisonous?'
+            example: 'I shouldn\'t have fed the cat champagne'
         }        
     ],    
     
     D: [
         {
             word: 'Djibouti',
-            example: 'It was their cue to see it through'
+            example: 'Djibouti is a country no one really knows where is located'
         },
 
         {
             word: 'Double-U',
-            example: 'The letter W is spelled like a pair of double U\'s'
+            example: 'The letter W is spelled like a pair of double U\'s...if you\'re curvy with it.'
         },
 
         {
             word: 'Django',
-            example: 'Django Unchained was one heck of a movie'
+            example: 'Django Unchained was one heck of a movie.'
         }
     ],
 
     E: [
         {
             word: 'eye',
-            example: 'I hurt my eye on the island'
+            example: 'I hurt my eye on the island.'
         },
 
         {
             word: 'Ex',
-            example: 'Ex'
+            example: 'Ex is being used as an example for the word E'
         },
 
         {
             word: 'Euphrates',
-            example: 'Euprates is a river'
+            example: 'Euprates is a river, not an island.'
         },
         {
             word: 'euphoria',
-            example: 'You could sense her euphoria beaming from her eyes'
+            example: 'You could sense her euphoria beaming from her eyes.'
         }        
     ],    
 
     F: [
         {
-            word: '',
-            example: ''
+            word: 'floccinaucinihilipilification',
+            example: 'Ha, good luck explaining the word floccinaucinihilipilification to your kids, parents!'
         }
     ],
 
     G: [
         {
             word: 'Gnarly',
-            example: ''
+            example: 'Before attempting a kick-flip, he said to himself "this is going to be gnarly!"'
         },
         {
             word: 'Gnome',
-            example: ''
+            example: 'The Gnome was going home.'
         },
         {
             word: 'Gnat',
-            example: ''
+            example: 'What\'s a gnat?'
         },
         {
             word: 'Gene',
-            example: ''
+            example: 'The student left his notes on genes in his jean jacket pocket'
         }                      
     ],
 
     H: [
         {
             word: 'hour',
-            example: ''
+            example: 'His pace was hectic as he was half an hour late'
         },
         {
             word: 'honest',
-            example: ''
+            example: 'honestly, he didn\'t know where he had left his hat.'
         },
         {
             word: 'Heir',
-            example: ''
+            example: 'The heir to the throne was having his hair cut'
         },
         {
             word: 'Hor-D\'oeuvres',
-            example: ''
+            example: 'how many Hor-D\'oeuvres were served at the party only Henry knew.'
         },
 
         {
             word: 'Honor',
-            example: ''
+            example: '"Is it honor or Honour, your Honor"'
         }        
     ],
 
     I: [
             {
                 word: 'Irk',
-                example: ''
+                example: 'It irked the parent that the example for I wasn\'t island...too bad so sad.'
             }
         ],
 
     J: [
         {
             word: 'Jalapeno',
-            example: ''
+            example: 'The Jalapeno was just so juicy.'
         },
         {
             word: 'Jay',
-            example: ''
+            example: 'hey look a Blue Jay.'
         }
     ],    
     K: [
         {
             word: 'knick-knack',
-            example: ''
+            example: '"Knick-knack paddy wack" is a term I have no idea where it originaited from.'
         },
         {
             word: 'knife',
-            example: ''
+            example: 'The letter "k" in "kinfe" is silent, but wouldn\'t it be better if it wasn\'t? "Can you please pass the "kuh-nife".'
         },
         {
             word: 'knight',
-            example: ''
+            example: 'The knight knowingly rode off into the night'
         },
         {
             word: 'knowledge',
-            example: ''
+            example: 'have you aquired enough knowledge to know to differentiate the letter "K" from "C"?'
         },
         {
             word: 'knead',
-            example: ''
+            example: 'Knead the bread'
         },
         {
             word: 'knee',
-            example: ''
+            example: 'Conlin Kapernick famously took a knee to protest the ongoing racial disparity for black Americans during an NFL game'
         },
         {
             word: 'kneel',
-            example: ''
+            example: 'To become knighted one must kneel in front of the queen'
         }
     ],    
 
     L: [
         {
-            word: '',
-            example: ''
+            word: 'lumpenintelligentsia',
+            example: 'Could you perhaps lump those in power as part of the lumpenintelligentsia'
         }
     ],
 
     M: [
         {
             word: 'mnemonic',
-            example: ''
+            example: 'mnemonicically the word "mneomic" might not have been the most memorable use of an example to the letter "m"'
         }
     ],
 
     N: [
         {
-            word: '',
-            example: ''
+            word: 'Nut',
+            example: 'fine, here\'s a gimmie...nuts'
         }
     ],
 
     O: [
         {
             word: 'Oh',
-            example: ''
+            example: '"Oh, that\'s a wierd flex, but okay", Oliver said'
         },
         {
             word: 'Ouiji',
-            example: ''
+            example: 'Don\'t mess around with a Ouiji board kids'
         },
         {
             word: 'Our',
-            example: ''
+            example: 'Our true savior to the American People,Thanks Obama!'
         },
         {
             word: 'One',
-            example: ''
+            example: 'one example of the letter "o" is the word "one", but it\'s also found in middle of the word "won"'
         }
     ],  
 
     P: [
         {
             word: 'Pea',
-            example: ''
+            example: 'like two peas in a pod.'
         },
         {
             word: 'Pneumonia',
-            example: ''
+            example: 'Peter caught Pneumonia during a pretty bad period in their past.'
         },
         {
             word: 'pterodactyl',
-            example: ''
+            example: 'nuff said.'
         },
         {
             word: 'Psychosis',
@@ -293,153 +293,188 @@ const letter = {
         },
         {
             word: 'Psychic',
-            example: ''
+            example: 'Guessing the word psychic before the word "Psychic" appears woud make you a psychic. Does this help you with the letter "P"?'
         },
         {
             word: 'Phlegm',
             example: ''
+        },
+        {
+            word: 'Prepos',
+            example: 'That Prepos pop-up is pretty persistant.'            
         }
     ],    
     Q: [
         {
             word: 'Queue',
-            example: ''
+            example: 'The queue was quiet curious to quickly get their questions anwered on help cue'
         },
         {
             word: 'Qatar',
-            example: ''
+            example: 'Quatar is quite hot'
         },
         {
             word: 'quiche',
-            example: ''
+            example: 'Oh boy, that quiche was quite delicious!'
         }
     ],
     R: [
         {
-            word: '',
-            example: ''
+            word: 'rhinotillexomania',
+            example: 'The definition of rhinotillexomania when nose picking becomes a body-focused repetitive behavior or obsessive–compulsive disorder...Don\'t pick your nose so much Billy!'
         }
     ],
     
     S: [
         {
             word: 'Sea',
-            example: ''
+            example: 'You see the sea is seemingly enormous'
         },
         {
             word: 'See',
-            example: ''
+            example: 'See that?'
         },
         {
             word: 'Shhh',
-            example: ''
+            example: '"shhh, I\'m trying to learn the alphabet"'
         }        
     ],  
 
     T: [
         {
             word: 'Tea',
-            example: ''
+            example: 'Thanks for the tea.'
         },
         {
             word: 'Tee',
-            example: ''
+            example: 'He his the tee at the top.'
         },
         {
             word: 'Tsunami',
-            example: ''
+            example: 'uhoh, watch out for that tsunami.'
         },
         {
             word: 'thistle',
-            example: ''
+            example: 'My bootcamp instructor has a wierd facisnation with the word thistle....trying saying that a thousand times.'
         },
         {
             word: 'thought',
-            example: ''
+            example: 'Here\'s a thought, you don\'t ever wash your hands. Your hands wash themselves while you stand there and watch.'
         }
     ], 
     U: [
         {
             word: 'urgent',
-            example: ''
+            example: 'You will urgently want to explain this one.'
         },
         {
             word: 'urn',
-            example: ''
+            example: 'Uma earned an urn, but not the one you\'re thinking about.'
         },
         {
             word: 'uber',
-            example: ''
+            example: 'Is Uber really all that ubiqitous anymore? Get a Lyft kids.'
         },
     ],
 
     V: [
         {
-            word: '',
-            example: ''
+            word: 'Veal',
+            example: 'Kids, think of a baby calf...parents you can explain the rest.'
         }
     ],
     
     W: [
+        {
+            word: 'Wyoming',
+            example: 'Why would you what to go to Wyoming? Serious question really, what\'s there?'
+        },
         {
             word: 'Wren',
             example: ''
         },
         {
             word: 'wrinkly',
-            example: ''
+            example: 'After getting wet, my wastebasket is now wrinkly'
         },
         {
             word: 'who',
-            example: ''
+            example: 'Who would use the word "who" as an example to the word "w"? We do!'
         },
         {
             word: 'why',
-            example: ''
+            example: 'Why is it that in English, the letter "w" is pronounced "double-you" while in French it is pronounced  "doo-bluh-vay" which literally means "double v"? Because confusion! I don\'t ever want to see you kids write your "w\'s" with sharp edges, it\'s not what the founding fathers of the English language envisioned!' 
         },
         {
             word: 'Writing',
-            example: ''
+            example: 'Writing the word "w" is not the same as saying "w".'
         }
     ],
     X: [
         {
             word: 'xenodocheionology',
-            example: ''
+            example: 'xenodocheionology...what?'
         }
     ],
     Y: [
         {
-            word: 'Wyoming',
-            example: ''
-        },
-        {
             word: 'You',
-            example: ''
+            example: '"Have you ever had a dream that you, um, you had, your, you- you could, you’ll do, you- you wants, you, you could do so, you- you’ll do, you could- you, you want, you want them to do you so much you could do anything?"'
         },
         {
             word: 'Yttrium',
-            example: ''
+            example: 'Yttrium is a chemical element with the letter "Y".'
         },
         {
             word: 'Yves',
-            example: ''
+            example: 'While thinking of a clever example, the brand Yves Rocher comes to mind...that\'s all.'
         },
         {
             word: 'write',
-            example: ''
+            example: 'Why write it out, when you will want to wave it off'
         }
     ],
     Z: [
         {
             word: 'Zed',
-            example: ''
+            example: 'the letter "z" is pronounced like "Zed" in Canada, but in the U.S. its pronounced like "Zee"...on that note, what\'s up with the Metric system not being adopted by the U.S., we didn\'t have enough zealous people to convince them otherwise?? Jeeeeeezzzzzzz!'
         },
     ]
 };
 
+// Document Ready
 $(function () {
 
+
+////This function will select a random letter for the user and a random word to go along  with it
+// =================================================================
+
+    // function when clicked will select a random letter
+    $('.random').on('click', function () {
+
+        //creates a new array from the letters object
+        const newLetterArray = Object.keys(letter);
+
+        // get random letter from the chosen array
+        const randomLetter = newLetterArray[Math.floor(Math.random() * newLetterArray.length)];
+
+        // using the randomLetter to extract a random word
+        const randomWord = letter[randomLetter];
+        const result = randomWord[Math.floor(Math.random() * randomWord.length)];
+
+        console.log(result);
+
+        $('.result').html(`<h2>Your random letter is ${}.</h2> <h3>${}is for "${.word}". ${.example}</h3><h4>Type in a new letter!</h4>`)
+    });
+
+    // function doStuff(thing) {
+        // TODO: finish this function
+        // return;
+    // };
+
+    //================================================================
+// This function will accept a user's input (a letter and select a random word generated from the letter array chose)
+// ===================================================================
     $('form').on('submit', function (e) {
         //prevent default action of the form(refresh page)
         e.preventDefault();
@@ -452,18 +487,21 @@ $(function () {
         const regexCheck = regexPattern.exec(userLetter);
         const userChoice = letter[userLetter];
         //if the user input meets the specific requirements only then run the function of output
+
         if (userLetter !== '' && regexCheck !== null) {
             //resets the input field to blank once letter choice has been made
             $('input[type=text]').val('');
             //selects a random word in the specified word array from user
             const result = userChoice[Math.floor(Math.random() * userChoice.length)];
+            console.log('result', result, userChoice);
+
             // outputs to the DOM the results as well as the example
-            $('.result').html(`<h2>You choose the letter ${userLetter}.</h2><h3><strong>${userLetter}</strong> is for "${result.word}". ${result.example}</h3><h4>Press the button again for another example or type in a new letter!</h4>`)
+            $('.result').html(`<h2>You choose the letter ${userLetter}.</h2><h3><strong>${userLetter}</strong> is for "${result.word}". ${result.example}</h3><h4>Type in a new letter!</h4>`)
         //if the user inputs an invalid character(s) then default message will appear to warn user to try again
         } else {
-            $('.result').html(`<h2>Sorry that's not a valid response...Please type in one only letter!</h3>`)
-        }
-        
+            $('.result').html(`<h2>Sorry that's not a valid response...Please type in only one letter!</h3>`)
+            alert(`Sorry that's not a valid response...Please type in only one letter!`)
+        }        
     });
 });
 
