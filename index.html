@@ -10,22 +10,25 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Rubik|Spicy+Rice" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 <body>
 
-<h1>P for Pneumonia</h1>
-<h2>The Worst Application to Learn the Alphabet...Ever!</h2><i class="fas fa-child fa-5x"></i>
+<h1 class="animated pulse">P for Pneumonia</h1>
+<h2 class="animated rot`1ateIn delay-1s">The Worst Application to Learn the Alphabet...Ever!</h2><i class="fas fa-child fa-5x"></i>
 <h2>ie. Parenting on Hard Mode</h2>
 
 <div class="box">
     <form action="">  
         <label for="coffee">Type in a Letter</label>
-        <input type="text" required="true">  
+        <input type="text" required="true" maxlength="1" class="letter-input">  
         <div>
             <input type="submit" name="letter" value="Show me a Word!">
         </div>
-        <div class="random">Random Letter</div>
+        <div class="random" unselectable="on">Random Letter</div>
+        <div class="alphabet" unselectable="on">Let's go through the Alphabet!</div>
         <div class="result"></div>
+
     </form>
 </div>
 
@@ -33,9 +36,10 @@
 
 
 
-
+<footer>Copyright &copy Eric Wing</footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script src="sweetalert2/dist/sweetalert2.all.min.js"></script>
 <script src="script.js"></script>
 
 </body>

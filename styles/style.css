@@ -154,12 +154,41 @@ h2, h3, p {
   margin: 0 auto;
   border: violet 5px dotted; }
 
-.random {
+.random,
+.alphabet {
   background: lightblue;
-  border: 5px dashed tomato; }
+  border: 1px dashed tomato;
+  cursor: pointer;
+  -webkit-transition: .25s ease-in;
+  -o-transition: .25s ease-in;
+  transition: .25s ease-in;
+  -webkit-user-select: none;
+  /* Chrome/Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+ */ }
+
+input[type="text"],
+textarea {
+  background: lightblue; }
+
+.random:hover,
+.alphabet:hover {
+  color: lightblue;
+  background: indigo; }
 
 form {
   padding: 20px; }
+
+input[type="text"]:required:focus {
+  border-color: rgba(18, 140, 32, 0.6);
+  /* green */
+  outline: 0;
+  background: lightblue; }
+
+.letter-input {
+  width: 20px; }
 
 input[type=submit] {
   -webkit-border-radius: 5px;

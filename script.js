@@ -140,7 +140,12 @@ const letter = {
         {
             word: 'floccinaucinihilipilification',
             example: 'Ha, good luck explaining the word floccinaucinihilipilification to your kids, parents!'
+        },
+        {
+            word: 'flummadiddle',
+            example: 'the other example for the letter "F" is flummadiddle! That means its nnonsense!'
         }
+
     ],
 
     G: [
@@ -190,6 +195,10 @@ const letter = {
             {
                 word: 'Irk',
                 example: 'It irked the parent that the example for I wasn\'t island...too bad so sad.'
+            },
+            {
+                word: 'ichthyoacanthotoxism',
+                example: 'ichthyoacanthotoxism is poisoning from the sting or bite of a fish, tell that to daddy next time he wants to go fishing!'
             }
         ],
 
@@ -238,13 +247,23 @@ const letter = {
         {
             word: 'lumpenintelligentsia',
             example: 'Could you perhaps lump those in power as part of the lumpenintelligentsia'
+        },
+        {
+            word: 'lenitive',
+            example: 'Bobby didn\'t realize he had accidentally taken daddy\'s medication a lentitve which is a laxative, and now the washroom looks like a warzone.'
         }
+
+
     ],
 
     M: [
         {
             word: 'mnemonic',
             example: 'mnemonicically the word "mneomic" might not have been the most memorable use of an example to the letter "m"'
+        },
+        {
+            word: 'macropicide',
+            example: 'Because of a wild origin story (which we won\'t get into) Timmy went to Australia to to train as a macropicide, a killer of kangaroos.'
         }
     ],
 
@@ -252,6 +271,10 @@ const letter = {
         {
             word: 'Nut',
             example: 'fine, here\'s a gimmie...nuts'
+        },
+        {
+            word: 'Napoo',
+            example: 'To destroy would be to napoo, the act of destroying would then be refered to as napooing...parents this is a real word.'
         }
     ],
 
@@ -445,8 +468,10 @@ const letter = {
 // Document Ready
 $(function () {
 
+    const myApp = {};
+    
 
-////This function will select a random letter for the user and a random word to go along  with it
+////This function will select a random letter for the user and a random word to go along with it
 // =================================================================
 
     // function when clicked will select a random letter
@@ -462,9 +487,9 @@ $(function () {
         const randomWord = letter[randomLetter];
         const result = randomWord[Math.floor(Math.random() * randomWord.length)];
 
-        console.log(result);
+        // console.log(result);
 
-        $('.result').html(`<h2>Your random letter is ${}.</h2> <h3>${}is for "${.word}". ${.example}</h3><h4>Type in a new letter!</h4>`)
+        $('.result').html(`<h2>Your random letter is ${randomLetter}.</h2> <h3>${randomLetter} is for "${result.word}". ${result.example}</h3><h4>Type in a new letter!</h4>`);
     });
 
     // function doStuff(thing) {
@@ -472,8 +497,78 @@ $(function () {
         // return;
     // };
 
-    //================================================================
-// This function will accept a user's input (a letter and select a random word generated from the letter array chose)
+////This function will go through the alphabet and get a random word from each letter array
+//==============================================================================
+
+//creates a new array from the letters object (MAKE DRY)
+const newLetterArray = Object.keys(letter);
+
+    // console.log(newLetterArray);
+
+// $('.alphabet').on('click', function () {
+    
+//     for (let i = 0; i < currentLetter.length; i++) {
+
+//     }
+// });
+
+
+
+
+
+
+// $('.alphabet').on('click', function () {
+
+    
+//     for (let i = 0; i < newLetterArray.length; i++) {
+//         // will show letters in order
+
+//         const letterInOrder = newLetterArray[i];
+//         alert(letterInOrder);
+
+//     }
+// });
+
+
+
+
+$('.alphabet').on('click', function () {
+    
+
+
+    //creates a new array from the letters object (MAKE DRY)
+        const newLetterArray = Object.keys(letter);
+
+        for (let i = 0; i < newLetterArray.length; i++) {
+            // this variable will grab each letter in the array in order 
+            const currentLetter = newLetterArray[i];
+            //this gives us all random words from A-Z
+            const randomWord = letter[currentLetter][Math.floor(Math.random() * letter[currentLetter].length)];
+           
+            alert(`${randomWord.word}. ${randomWord.example}`);
+
+        }  
+    });
+
+
+
+            // console.log(randomWord);
+            // $('.result').html(`<h2>${randomWord}</h2><h3></h3><h4>Type in a new letter!</h4>`)
+            // alphabetArray = [];
+            // const ABC = [alphabetArray.push(randomWord)];
+            
+            // console.log(ABC);
+            
+           
+        // $('.result').html(`<h2>${result.word}</h2><h3></h3><h4>Type in a new letter!</h4>`)
+                    // $('.alphabet').click(function () {
+                    //     $('.result').html(newLetterArray.pop());
+                    // });
+
+ 
+
+//================================================================
+// This function will accept a user's input (a letter and selects a random word generated from the letter array chosen)
 // ===================================================================
     $('form').on('submit', function (e) {
         //prevent default action of the form(refresh page)
@@ -487,14 +582,11 @@ $(function () {
         const regexCheck = regexPattern.exec(userLetter);
         const userChoice = letter[userLetter];
         //if the user input meets the specific requirements only then run the function of output
-
         if (userLetter !== '' && regexCheck !== null) {
             //resets the input field to blank once letter choice has been made
             $('input[type=text]').val('');
             //selects a random word in the specified word array from user
             const result = userChoice[Math.floor(Math.random() * userChoice.length)];
-            console.log('result', result, userChoice);
-
             // outputs to the DOM the results as well as the example
             $('.result').html(`<h2>You choose the letter ${userLetter}.</h2><h3><strong>${userLetter}</strong> is for "${result.word}". ${result.example}</h3><h4>Type in a new letter!</h4>`)
         //if the user inputs an invalid character(s) then default message will appear to warn user to try again
