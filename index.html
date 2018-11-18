@@ -20,7 +20,7 @@
 
 <div class="box">
     <form action="">  
-        <label for="coffee">Type in a Letter</label>
+        <label for="Lettter">Type in a Letter</label>
         <input type="text" required="true" maxlength="1" class="letter-input">  
         <div>
             <input type="submit" name="letter" value="Show me a Word!">
@@ -30,17 +30,25 @@
         <div class="result"></div>
 
     </form>
+
+    <div class="toggle-example">
+
+        <button type="submit" name="example" id="example" class="example" value="Show me an Example!">Show me an Example!</button>
+        <div class="example-text hidden">TEST</div>
+        <div class="user-example-text hidden"></div>
+    </div>
+
 </div>
 
 
 
 
 
-<footer>Copyright &copy Eric Wing</footer>
+<footer><p>Copyright &copy Eric Wing 2018<p></footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
-<script src="sweetalert2/dist/sweetalert2.all.min.js"></script>
 <script src="script.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </body>
 </html>

@@ -1,5 +1,3 @@
-// Ideas?
-
 // Add optional click button for music so its not in your face annoying 
 // level 2: optional click option for SFX; --> ADD SFX to each button click 
 
@@ -465,77 +463,60 @@ const letter = {
     ]
 };
 
+const myApp = {};
+//creates a new array from the letters object
+myApp.newLetterArray = Object.keys(letter);
+
+myApp.randomLetter = myApp.newLetterArray[Math.floor(Math.random() * myApp.newLetterArray.length)];
+
+// using the randomLetter to extract a random word
+myApp.randomWord = letter[myApp.randomLetter];
+
+// using the randomLetter to extract a random word
+myApp.result = myApp.randomWord[Math.floor(Math.random() * myApp.randomWord.length)];
+
+myApp.hideExample = $('.example').on('click', function (e) {
+
+    $('.example-text').toggleClass('hidden');
+    console.log('do something!'); $('.example-text').html(`<h2>${myApp.result.example}</h2>`);
+});
+
+myApp.hideExample = $('.example').on('click', function (e) {
+
+    $('.user-example-text').toggleClass('hidden');
+    console.log('do something!'); $('.example-text').html(`<h2>${myApp.result.example}</h2>`);
+});
+
 // Document Ready
 $(function () {
-
-    const myApp = {};
+    ////This function will select a RANDOM LETTER/WORD
+    //==========================================================
     
-
-////This function will select a random letter for the user and a random word to go along with it
-// =================================================================
-
     // function when clicked will select a random letter
     $('.random').on('click', function () {
 
-        //creates a new array from the letters object
-        const newLetterArray = Object.keys(letter);
+        $('.example').addClass('view');
 
         // get random letter from the chosen array
-        const randomLetter = newLetterArray[Math.floor(Math.random() * newLetterArray.length)];
+        myApp.randomLetter = myApp.newLetterArray[Math.floor(Math.random() * myApp.newLetterArray.length)];
 
         // using the randomLetter to extract a random word
-        const randomWord = letter[randomLetter];
-        const result = randomWord[Math.floor(Math.random() * randomWord.length)];
+        myApp.randomWord = letter[myApp.randomLetter];
+        myApp.result = myApp.randomWord[Math.floor(Math.random() * myApp.randomWord.length)];
+        
+        $('.result').html(`<h2>Your random letter is ${myApp.randomLetter}.</h2><h3>${myApp.randomLetter} is for "${myApp.result.word}"</h3><h4>Press again for a new letter!</h4>`);
+        
+        //once random letter is shown, show button for example
+        $('.example-text').addClass('hidden');
 
-        // console.log(result);
-
-        $('.result').html(`<h2>Your random letter is ${randomLetter}.</h2> <h3>${randomLetter} is for "${result.word}". ${result.example}</h3><h4>Type in a new letter!</h4>`);
     });
 
-    // function doStuff(thing) {
-        // TODO: finish this function
-        // return;
-    // };
 
 ////This function will go through the alphabet and get a random word from each letter array
-//==============================================================================
-
-//creates a new array from the letters object (MAKE DRY)
-const newLetterArray = Object.keys(letter);
-
-    // console.log(newLetterArray);
-
-// $('.alphabet').on('click', function () {
-    
-//     for (let i = 0; i < currentLetter.length; i++) {
-
-//     }
-// });
-
-
-
-
-
-
-// $('.alphabet').on('click', function () {
-
-    
-//     for (let i = 0; i < newLetterArray.length; i++) {
-//         // will show letters in order
-
-//         const letterInOrder = newLetterArray[i];
-//         alert(letterInOrder);
-
-//     }
-// });
-
-
-
+//==============================================================
 
 $('.alphabet').on('click', function () {
     
-
-
     //creates a new array from the letters object (MAKE DRY)
         const newLetterArray = Object.keys(letter);
 
@@ -545,37 +526,41 @@ $('.alphabet').on('click', function () {
             //this gives us all random words from A-Z
             const randomWord = letter[currentLetter][Math.floor(Math.random() * letter[currentLetter].length)];
            
-            alert(`${randomWord.word}. ${randomWord.example}`);
+            // alert(`${currentLetter} is for ${randomWord.word}. ${randomWord.example}`);
 
+
+
+
+
+            swal ({
+                title: `The letter ${currentLetter} is for ${randomWord.word}`,
+                text: `${randomWord.example}`,
+                icon: "info",
+                button: "Press me for the next letter in the Alphabet",
+            });
         }  
     });
-
-
-
             // console.log(randomWord);
             // $('.result').html(`<h2>${randomWord}</h2><h3></h3><h4>Type in a new letter!</h4>`)
             // alphabetArray = [];
             // const ABC = [alphabetArray.push(randomWord)];
             
             // console.log(ABC);
-            
-           
+     
         // $('.result').html(`<h2>${result.word}</h2><h3></h3><h4>Type in a new letter!</h4>`)
                     // $('.alphabet').click(function () {
                     //     $('.result').html(newLetterArray.pop());
                     // });
-
- 
-
-//================================================================
+//==============================================================
 // This function will accept a user's input (a letter and selects a random word generated from the letter array chosen)
-// ===================================================================
+// ============================================================
     $('form').on('submit', function (e) {
+        $('.example').addClass('view');
         //prevent default action of the form(refresh page)
         e.preventDefault();
         // Captures value of the form
         const userInput = $('input').val();
-        //If user input is lowercase letter changes to uppercase (error handling)
+        //If user input is lowercase letter changes to uppercase to to search for letter property (error handling)
         const userLetter = userInput.toUpperCase();
         //set a predefined pattern to check later to handle unintended user input (number(s), more than 1 letter, special characters etc.)
         const regexPattern = /^[a-zA-Z]{1}$/;
@@ -588,7 +573,25 @@ $('.alphabet').on('click', function () {
             //selects a random word in the specified word array from user
             const result = userChoice[Math.floor(Math.random() * userChoice.length)];
             // outputs to the DOM the results as well as the example
-            $('.result').html(`<h2>You choose the letter ${userLetter}.</h2><h3><strong>${userLetter}</strong> is for "${result.word}". ${result.example}</h3><h4>Type in a new letter!</h4>`)
+            $('.result').html(`<h2>You choose the letter ${userLetter}.</h2><h3><strong>${userLetter}</strong> is for "${result.word}".`)
+
+
+            myApp.hideExample = $('.example').on('click', function (e) {
+                $('.user-example-text').toggleClass('hidden');
+                $('.example-text').html(`<h2>${result.example}</h2>`);
+            });
+
+            $('.example-text').addClass('hidden');
+
+
+            // hideExample = $('.example').on('click', function (e) {
+            //     $('.user-example-text').addClass('hidden');
+
+            //     $('.user-example-text').html(`<h2>TEST${result.example}TEST</h2>`);
+            // });
+
+            // $('.example-text').addClass('hidden');
+
         //if the user inputs an invalid character(s) then default message will appear to warn user to try again
         } else {
             $('.result').html(`<h2>Sorry that's not a valid response...Please type in only one letter!</h3>`)
@@ -663,3 +666,9 @@ $('.alphabet').on('click', function () {
 
 
 // });
+
+
+    // function doStuff(thing) {
+        // TODO: finish this function
+        // return;
+    // };

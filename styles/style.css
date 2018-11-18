@@ -176,7 +176,7 @@ textarea {
 .random:hover,
 .alphabet:hover {
   color: lightblue;
-  background: indigo; }
+  background: violet; }
 
 form {
   padding: 20px; }
@@ -204,3 +204,18 @@ input[type=submit] {
   border: 1px solid #000;
   color: black;
   text-decoration: none; }
+
+.example {
+  display: none; }
+
+.hidden {
+  display: none; }
+
+.view {
+  display: initial; }
+
+footer {
+  margin-top: 180px;
+  width: 100%;
+  background: black;
+  color: white; }

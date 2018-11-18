@@ -5,8 +5,6 @@ html {
 body {
     background: skyblue;
     text-align: center;
-
-
 }
 
 .main-wrapper {
@@ -59,7 +57,7 @@ textarea {
 .random:hover,
 .alphabet:hover {
     color: lightblue;
-    background: indigo;
+    background: violet;
 }
 
 form {
@@ -76,6 +74,11 @@ input[type="text"]:required:focus {
     width: 20px;
 }
 
+
+
+
+
+
 input[type=submit] {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -87,6 +90,25 @@ input[type=submit] {
   border: 1px solid #000;
   color: black;
   text-decoration: none;
+}
+.example {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.view {
+    display: initial;
+}
+
+
+footer {
+    margin-top: 180px;
+    width: 100%;
+    background: black;
+    color: white;
 }
 
 // proper layout
