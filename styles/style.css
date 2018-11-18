@@ -154,6 +154,7 @@ h2, h3, p {
   margin: 0 auto;
   border: violet 5px dotted; }
 
+.another-user-example,
 .random,
 .alphabet {
   background: lightblue;
@@ -215,7 +216,11 @@ input[type=submit] {
   display: initial; }
 
 footer {
-  margin-top: 180px;
+  margin-top: 200px;
   width: 100%;
   background: black;
   color: white; }
+
+footer p {
+  padding: 5px;
+  margin: 0; }

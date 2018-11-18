@@ -36,6 +36,7 @@ h2,h3,p {
     border: violet 5px dotted;
 }
 
+.another-user-example,
 .random,
 .alphabet
  {
@@ -95,6 +96,10 @@ input[type=submit] {
     display: none;
 }
 
+.another-user-example {
+
+}
+
 .hidden {
     display: none;
 }
@@ -105,10 +110,15 @@ input[type=submit] {
 
 
 footer {
-    margin-top: 180px;
+    margin-top: 200px;
     width: 100%;
     background: black;
     color: white;
+}
+
+footer p {
+    padding: 5px;
+    margin: 0;
 }
 
 // proper layout
