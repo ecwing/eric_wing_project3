@@ -21,9 +21,20 @@ main {
     margin-bottom: 35px;
 
 }
-.footer {
-//   flex-shrink: 0;
+
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: black;
 }
+
+.skip-link:focus {
+    left: 0;
+}
+
 
 .main-wrapper {
     max-width: 1280px;
@@ -53,24 +64,34 @@ h2,h3,p {
     font-family: 'Rubik', sans-serif;
 }
 
+.strong-text {
+    @include font-size(30);
+}
+
 .line-through {
     text-decoration: line-through;
 }
 
 .fas {
     display: inline;
+    margin-bottom: 10px;
 }
 
 .box {
     border-radius: 10px;
-    background: #fff;
+    background: #F8F8FF;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
     width: 80%;
     max-width: 500px;
     box-shadow: 20px 20px 5px 0px pink;
     -webkit-box-shadow: 20px 20px 0px 0px pink;
     -moz-box-shadow: 20px 20px 0px 0px pink;
+}
+
+.box p {
+    padding: 0;
+    margin: 5px;
 }
 
 .select-button {
@@ -87,23 +108,31 @@ button {
 }
 
 
-input,
+input[type="submit"],
 button,
 .alphabet-button,
 .another-user-example,
 .random,
-.alphabet
- {
-    margin: 0 auto;
-    width: 60%;
-    background: pink;
-    cursor: pointer;
-    transition: .2s ease-in;
-    border-radius: 10px;
-    -webkit-user-select: none; /* Chrome/Safari */        
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+ */
+.alphabet {
+        margin: 0 auto;
+        width: 60%;
+        padding: 10px;
+        background: pink;
+        cursor: pointer;
+        transition: .2s ease-in;
+        border-radius: 10px;
+        -webkit-user-select: none; /* Chrome/Safari */        
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+ */
+}
 
+input[type="text"] {
+    background: pink;
+    width: 50px;
+}
+
+.another-user-example {
+    padding: 2px;
 }
 
 // textarea {
@@ -121,19 +150,8 @@ button[type="submit"]:hover,
     background: #b3b7ee;
 }
 
-// form {
-//     padding: 10px;
-// }
-
 input[type="submit"] {
     margin: 5px 0;
-}
-
-input[type="text"]:required:focus {
-    border-color: rgba(18, 140, 32, 0.6); /* green */
-    outline: 0;
-    background: pink;
-
 }
 
 .letter-input {
@@ -146,10 +164,6 @@ input[type="text"]:required:focus {
     display: none;
 }
 
-.another-user-example {
-
-}
-
 .hidden {
     display: none;
 }
@@ -157,7 +171,6 @@ input[type="text"]:required:focus {
 .view {
     display: initial;
 }
-
 
 footer {
     width: 100%;
@@ -171,6 +184,7 @@ footer p {
     margin: 0;
 }
 
+// RESPONSIVE STYLES
 
  @media only screen and (max-width: 645px) {
     
@@ -184,7 +198,7 @@ footer p {
     .random,
     .alphabet
         {
-            width: 75%;
+            width: 85%;
         }
 
 }

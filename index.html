@@ -13,46 +13,48 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 <body>
-<main>
-    <h1 class="animated pulse">P for Pneumonia</h1>
-    <h2 class="animated rotateIn delay-1s">The <span class="line-through">Worst</span> most Challenging Application to Learn the Alphabet...Ever!</h2><span><i class="fas fa-child fa-3x animated bounce delay-2s"></i></span>
-    <!-- <h2>ie. Parenting on Hard Mode</h2> -->
-    
-    <div class="box main-wrapper">
-        <form action="">  
-            <p>Please select an Option below!</p>
-            <div class="random select-button" unselectable="on">Random Letter</div>
-            <p>- OR -</p>
-            <div class="alphabet select-button" unselectable="on">Let's go through the Alphabet!</div>
-            <p>- OR -</p>
-            <label for="Lettter">Type in a Letter:</label>
-            <input type="text" required="true" maxlength="1" class="letter-input">  
-            <div>
-                <input type="submit" name="letter" value="Show me a Word!">
+    <!-- SKIP TO MAIN CONTENT LINK - ACCESSEBILITY IS SUPER IMPORTANT!!! -->
+    <a href="#maincontent" class="skip-link">Skip to main content.</a>
+    <main>
+        <h1 class="animated pulse">P for Pneumonia</h1>
+        <h2 class="animated rotateIn delay-1s">The <span class="line-through">Worst</span> most Challenging Web App to Learn the Alphabet...Ever!</h2><span><i class="fas fa-child fa-3x animated bounce delay-2s"></i></span>
+        <!-- <h2>ie. Parenting on Hard Mode</h2> -->
+        
+        <div class="box main-wrapper">
+            <form action="">  
+                <p>Please select an Option below!</p>
+                <div class="random select-button" id="maincontent" unselectable="on">Random Letter</div>
+                <p>- or -</p>
+                <div class="alphabet select-button" unselectable="on">Let's go through the Alphabet!</div>
+                <div class="alphabet-button hidden select-button">Next Letter</div>
+                <p>- or -</p>
+                <label for="Lettter">Type in a letter for a random word:</label>
+                <input type="text" required="true" maxlength="1" class="letter-input">  
+                <div>
+                    <input type="submit" name="letter" value="Show me a Word!">
+                </div>
+                <div class="another-user-example hidden select-button">Same letter with another word</div>
+
+
+                <div class="result"></div>
+            </form>
+
+            <div class="toggle-example">
+                <button type="submit" name="example" class="example" value="Show me an Example!">Show or hide the example!</button>
+                <div class="example-text hidden"></div>
+                <div class="user-example-text hidden"></div>
             </div>
-            <div class="another-user-example hidden select-button">Another word with the same letter</div>
-
-            <div class="alphabet-button hidden select-button">Next Letter</div>
-
-            <div class="result"></div>
-        </form>
-
-        <div class="toggle-example">
-            <button type="submit" name="example" class="example" value="Show me an Example!">Show me an Example!</button>
-            <div class="example-text hidden"></div>
-            <div class="user-example-text hidden"></div>
         </div>
-    </div>
 
-    
-</main>
-
+        
+    </main>
 
 
 
-<footer class="footer">
-    <p>Copyright &copy Eric Wing 2018</p>
-</footer>
+
+    <footer class="footer">
+        <p>Copyright &copy Eric Wing 2018</p>
+    </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 <script src="script.js"></script>

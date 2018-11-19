@@ -74,12 +74,12 @@ const letter = {
 
         {
             word: 'cede',
-            example: 'To cede power he gave his own seed, his precious cherry seeds'
+            example: 'To cede power he gave his own seed, his precious cherry seeds.'
         },        
 
         {
             word: 'colenol',
-            example: 'The Colenol was curious about the cat'
+            example: 'The Colenol was curious about the cat.'
         },
 
         {
@@ -89,19 +89,19 @@ const letter = {
 
         {
             word: 'cough',
-            example: 'During the winter he developed a bad cough...on another note, how would one spell out the most average vocalization of a cough with letters? Would it be something like "KFHFHHFFKHFH"....that\'s my take'
+            example: 'During the winter he developed a bad cough...on another note, how would you really spell out a cough with letters? Would it be something like "KFHFHHFF"?'
         },        
 
         {
             word: 'champagne',
-            example: 'I shouldn\'t have fed the cat champagne'
+            example: 'I shouldn\'t have fed the cat champagne.'
         }        
     ],    
     
     D: [
         {
             word: 'Djibouti',
-            example: 'Djibouti is a country no one really knows where is located'
+            example: 'Djibouti is a country no one really knows where is located, until you refer to a map.'
         },
 
         {
@@ -123,7 +123,7 @@ const letter = {
 
         {
             word: 'Ex',
-            example: 'Ex is being used as an example for the word E'
+            example: 'Ex is being used as an example for the word E.'
         },
 
         {
@@ -163,14 +163,14 @@ const letter = {
         },
         {
             word: 'Gene',
-            example: 'The student left his notes on genes in his jean jacket pocket'
+            example: 'The student left his notes on genes in his jean jacket.'
         }                      
     ],
 
     H: [
         {
             word: 'hour',
-            example: 'His pace was hectic as he was half an hour late'
+            example: 'His pace was frantic as he was half-an-hour late.'
         },
         {
             word: 'honest',
@@ -187,14 +187,14 @@ const letter = {
 
         {
             word: 'Honor',
-            example: '"Is it honor or Honour, your Honor"'
+            example: 'His honor was earned on the battlefield.'
         }        
     ],
 
     I: [
             {
                 word: 'Irk',
-                example: 'It irked the parent that the example for I wasn\'t island...too bad so sad.'
+                example: 'It irked the parent that the example for "I" wasn\'t island...too bad so sad.'
             },
             {
                 word: 'ichthyoacanthotoxism',
@@ -231,22 +231,22 @@ const letter = {
         },
         {
             word: 'knead',
-            example: 'Knead the bread'
+            example: 'Knead the flour to make bread.'
         },
         {
             word: 'knee',
-            example: 'Conlin Kapernick famously took a knee to protest the ongoing racial disparity for black Americans during an NFL game'
+            example: 'Conlin Kapernick famously took a knee to protest the ongoing racial disparity for black Americans during an NFL game.'
         },
         {
             word: 'kneel',
-            example: 'To become knighted one must kneel in front of the queen'
+            example: 'To become knighted one must kneel in front of the queen.'
         }
     ],    
 
     L: [
         {
             word: 'lumpenintelligentsia',
-            example: 'Could you perhaps lump those in power as part of the lumpenintelligentsia'
+            example: 'Could you perhaps lump those in power as part of the lumpenintelligentsia.'
         },
         {
             word: 'lenitive',
@@ -259,7 +259,7 @@ const letter = {
     M: [
         {
             word: 'mnemonic',
-            example: 'mnemonicically the word "mneomic" might not have been the most memorable use of an example to the letter "m"'
+            example: 'mnemonicically the word "mneomic" might not have been the most memorable use of an example to the letter "m".'
         },
         {
             word: 'macropicide',
@@ -269,19 +269,19 @@ const letter = {
 
     N: [
         {
-            word: 'Nut',
-            example: 'fine, here\'s a gimmie...nuts'
+            word: 'Nuts',
+            example: 'fine, here\'s a gimmie...nuts.'
         },
         {
             word: 'Napoo',
-            example: 'To destroy would be to napoo, the act of destroying would then be refered to as napooing...parents this is a real word.'
+            example: 'To destroy would be to napoo, the act of destroying would then be refered to as napooing.'
         }
     ],
 
     O: [
         {
             word: 'Oh',
-            example: '"Oh, that\'s a wierd flex, but okay", Oliver said'
+            example: '"Oh, that\'s a wierd flex, but okay", Oliver said.'
         },
         {
             word: 'Ouiji',
@@ -289,11 +289,11 @@ const letter = {
         },
         {
             word: 'Our',
-            example: 'Our true savior to the American People,Thanks Obama!'
+            example: 'The true savior to the American people,Thanks Obama!'
         },
         {
             word: 'One',
-            example: 'one example of the letter "o" is the word "one", but it\'s also found in middle of the word "won"'
+            example: 'one example of the letter "o" is the word "one", but it\'s also found in middle of the word "won".'
         }
     ],  
 
@@ -312,7 +312,7 @@ const letter = {
         },
         {
             word: 'Psychosis',
-            example: ''
+            example: 'Psychosis is a temporary loss of contact with reality.'
         },
         {
             word: 'Psychic',
@@ -320,7 +320,7 @@ const letter = {
         },
         {
             word: 'Phlegm',
-            example: ''
+            example: 'The thick viscous substance secreted by the mucous membranes of the respiratory passages, especially when produced in excessive or abnormal quantities.'
         },
         {
             word: 'Prepos',
@@ -330,11 +330,11 @@ const letter = {
     Q: [
         {
             word: 'Queue',
-            example: 'The queue was quiet curious to quickly get their questions anwered on help cue'
+            example: 'The queue was quiet curious to quickly get their questions anwered on help cue.'
         },
         {
             word: 'Qatar',
-            example: 'Quatar is quite hot'
+            example: 'Quatar is quite hot.'
         },
         {
             word: 'quiche',
@@ -351,7 +351,7 @@ const letter = {
     S: [
         {
             word: 'Sea',
-            example: 'You see the sea is seemingly enormous'
+            example: 'You see the sea is seemingly enormous.'
         },
         {
             word: 'See',
@@ -359,7 +359,7 @@ const letter = {
         },
         {
             word: 'Shhh',
-            example: '"shhh, I\'m trying to learn the alphabet"'
+            example: '"shhh, I\'m trying to learn the alphabet".'
         }        
     ],  
 
@@ -403,7 +403,7 @@ const letter = {
     V: [
         {
             word: 'Veal',
-            example: 'Kids, think of a baby calf...parents you can explain the rest.'
+            example: 'I love me a veal sandwhich!'
         }
     ],
     
@@ -414,7 +414,7 @@ const letter = {
         },
         {
             word: 'Wren',
-            example: ''
+            example: 'A wren is a small, brownish passerine birds.'
         },
         {
             word: 'wrinkly',
@@ -454,13 +454,13 @@ const letter = {
         },
         {
             word: 'write',
-            example: 'Why write it out, when you will want to wave it off'
+            example: 'Why write it out, when you will want to wave it off.'
         }
     ],
     Z: [
         {
             word: 'Zed',
-            example: 'the letter "z" is pronounced like "Zed" in Canada, but in the U.S. its pronounced like "Zee"...on that note, what\'s up with the Metric system not being adopted by the U.S., we didn\'t have enough zealous people to convince them otherwise?? Jeeeeeezzzzzzz!'
+            example: 'the letter "z" is pronounced like "Zed" in Canada, but in the U.S. its pronounced like "Zee"...on that note, what\'s up with the Metric system not being adopted by the U.S., we didn\'t have enough zealous people to convince them otherwise?? Jezzz!'
         },
     ]
 };
@@ -508,7 +508,7 @@ $(function () {
         myApp.randomWord = letter[myApp.randomLetter];
         myApp.result = myApp.randomWord[Math.floor(Math.random() * myApp.randomWord.length)];
         
-        $('.result').html(`<h2>Your random letter is ${myApp.randomLetter}.</h2><h3>${myApp.randomLetter} is for "${myApp.result.word}"</h3><h4>Press again for a new letter!</h4>`);
+        $('.result').html(`<h2>Your random letter is...</h2> <h1>${myApp.randomLetter}</h1><h3>${myApp.randomLetter} is for "${myApp.result.word}"</h3><h4>Press again for a new letter!</h4>`);
 
         //once random letter is shown, show button for example
         $('.example-text').addClass('hidden');
@@ -612,7 +612,7 @@ $('form').on('submit', function (e) {
             //selects a random word in the specified word array from user
             subApp.result = subApp.userChoice[Math.floor(Math.random() * subApp.userChoice.length)];
             // outputs to the DOM the results as well as the example
-            $('.result').html(`<h2>You choose the letter ${subApp.userLetter}.</h2><h3><strong>${subApp.userLetter}</strong> is for "${subApp.result.word}".`)
+            $('.result').html(`<h2>You choose the letter...</h2><h1>${subApp.userLetter}</h1><h3><strong>${subApp.userLetter}</strong> is for "${subApp.result.word}".`)
             
             
             subApp.hideExample = $('.example').on('click', function (e) {
@@ -637,7 +637,7 @@ $('form').on('submit', function (e) {
 
 
 
-                $('.result').html(`<h3>Another word for ${subApp.userLetter} is ${subApp.anotherOne.word}. </h3>`);
+                $('.result').html(`<h3>Another word for "${subApp.userLetter}" is ${subApp.anotherOne.word}. </h3>`);
 
                 subApp.hideExample = $('.example').on('click', function (e) {
                     $('.user-example-text').toggleClass('hidden');
