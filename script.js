@@ -276,11 +276,11 @@ const letter = {
         },
         {
             word: 'Ouiji',
-            example: 'Don\'t mess around with a Ouiji board kids'
+            example: 'Don\'t mess around with a Ouiji board kids.'
         },
         {
             word: 'Our',
-            example: 'The true savior to the American people,Thanks Obama!'
+            example: 'Our true savior to the American people, Thanks Obama!'
         },
         {
             word: 'One',
@@ -336,7 +336,11 @@ const letter = {
         {
             word: 'rhinotillexomania',
             example: 'The definition of rhinotillexomania when nose picking becomes a body-focused repetitive behavior or obsessive–compulsive disorder...Don\'t pick your nose so much Billy!'
-        }
+        },
+        {
+            word: 'Representationalism',
+            example: 'A doctrine that ideas rather than external objects are basis of knowledge.'
+        }        
     ],
     
     S: [
@@ -395,6 +399,10 @@ const letter = {
         {
             word: 'Veal',
             example: 'I love me a veal sandwhich!'
+        },
+        {
+            word: 'vagarian',
+            example: 'A vagarian is a whimsical person!'
         }
     ],
     
@@ -428,7 +436,11 @@ const letter = {
         {
             word: 'xenodocheionology',
             example: 'xenodocheionology...what?'
-        }
+        },
+        {
+            word: 'Xena',
+            example: 'XENA PRINCESS WARRIORRRRRR!!!!'
+        },
     ],
     Y: [
         {
@@ -453,6 +465,10 @@ const letter = {
             word: 'Zed',
             example: 'the letter "z" is pronounced like "Zed" in Canada, but in the U.S. its pronounced like "Zee"...on that note, what\'s up with the Metric system not being adopted by the U.S., we didn\'t have enough zealous people to convince them otherwise?? Jezzz!'
         },
+        {
+        word: 'Zesty',
+        example: 'This steak needs to be more zesty...said no one ever.'
+        }
     ]
 };
 
@@ -532,8 +548,10 @@ $('.alphabet').on('click', function () {
 
                 alert(`The letter ${currentLetter} is for ${randomWord.word}. ${randomWord.example}`);
 
-                // $('.result').html(`<strong>${currentLetter}</strong> is for ${randomWord.word}, ${randomWord.example} `);
+
+                // $('.result').html(`<h1>${randomWord}</h1></strong> is for ${randomWord.word}, ${randomWord.example}`);
                      
+                console.log(randomWord);
                 // alert(randomWord);
 
         // });
