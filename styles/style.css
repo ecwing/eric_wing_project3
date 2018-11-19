@@ -135,34 +135,86 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 body {
   background: skyblue;
-  text-align: center; }
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-repeat: no-repeat; }
+
+html, body {
+  height: 100%; }
+
+main {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  margin-bottom: 35px; }
+
+.main-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: auto; }
 
 h1 {
   font-size: 50px;
   font-size: 5rem;
-  font-family: 'Spicy Rice', cursive;
+  font-family: 'Frijole', cursive;
   margin: 0;
-  margin-top: 10px; }
+  margin-top: 10px;
+  text-shadow: 5px 5px pink; }
+
+h2 {
+  margin: 0;
+  padding-bottom: 20px; }
 
 h2, h3, p {
   font-family: 'Rubik', sans-serif; }
 
-.box {
-  background: pink;
-  height: auto;
-  width: 300px;
-  margin: 0 auto;
-  border: violet 5px dotted; }
+.line-through {
+  text-decoration: line-through; }
 
+.fas {
+  display: inline; }
+
+.box {
+  border-radius: 10px;
+  background: #fff;
+  margin: 0 auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 20px 20px 5px 0px pink;
+  -webkit-box-shadow: 20px 20px 0px 0px pink;
+  -moz-box-shadow: 20px 20px 0px 0px pink; }
+
+.select-button {
+  padding: 5px;
+  margin: 5px; }
+
+input,
+button {
+  border: none;
+  margin: 15px;
+  padding: 5px; }
+
+input,
+button,
+.alphabet-button,
 .another-user-example,
 .random,
 .alphabet {
-  background: lightblue;
-  border: 1px dashed tomato;
+  margin: 0 auto;
+  width: 60%;
+  background: pink;
   cursor: pointer;
-  -webkit-transition: .25s ease-in;
-  -o-transition: .25s ease-in;
-  transition: .25s ease-in;
+  -webkit-transition: .2s ease-in;
+  -o-transition: .2s ease-in;
+  transition: .2s ease-in;
+  border-radius: 10px;
   -webkit-user-select: none;
   /* Chrome/Safari */
   -moz-user-select: none;
@@ -170,41 +222,28 @@ h2, h3, p {
   -ms-user-select: none;
   /* IE10+ */ }
 
-input[type="text"],
-textarea {
-  background: lightblue; }
-
+input[type="submit"]:hover,
+button[type="submit"]:hover,
+.alphabet-button:hover,
+.another-user-example:hover,
 .random:hover,
 .alphabet:hover {
-  color: lightblue;
-  background: violet; }
+  color: black;
+  background: #b3b7ee; }
 
-form {
-  padding: 20px; }
+input[type="submit"] {
+  margin: 5px 0; }
 
 input[type="text"]:required:focus {
   border-color: rgba(18, 140, 32, 0.6);
   /* green */
   outline: 0;
-  background: lightblue; }
+  background: pink; }
 
 .letter-input {
-  width: 20px; }
-
-input[type=submit] {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.16, #cfcfcf), color-stop(0.79, #fcfcfc));
-  background-image: -moz-linear-gradient(center bottom, #cfcfcf 16%, #fcfcfc 79%);
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(16%, #cfcfcf), color-stop(79%, #fcfcfc));
-  background-image: -webkit-linear-gradient(bottom, #cfcfcf 16%, #fcfcfc 79%);
-  background-image: -o-linear-gradient(bottom, #cfcfcf 16%, #fcfcfc 79%);
-  background-image: linear-gradient(to top, #cfcfcf 16%, #fcfcfc 79%);
-  padding: 3px;
-  border: 1px solid #000;
-  color: black;
-  text-decoration: none; }
+  width: 25px;
+  height: 25px;
+  text-align: center; }
 
 .example {
   display: none; }
@@ -216,11 +255,39 @@ input[type=submit] {
   display: initial; }
 
 footer {
-  margin-top: 200px;
   width: 100%;
   background: black;
   color: white; }
 
 footer p {
-  padding: 5px;
+  font-size: 6px;
+  font-size: 0.6rem;
+  padding: 3px;
   margin: 0; }
+
+@media only screen and (max-width: 645px) {
+  h1 {
+    font-size: 30px;
+    font-size: 3rem; }
+  input,
+  button,
+  .alphabet-button,
+  .another-user-example,
+  .random,
+  .alphabet {
+    width: 75%; } }
+
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 25px;
+    font-size: 2.5rem; }
+  h2 {
+    font-size: 10px;
+    font-size: 1rem; }
+  input,
+  button,
+  .alphabet-button,
+  .another-user-example,
+  .random,
+  .alphabet {
+    width: 100%; } }

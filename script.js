@@ -1,4 +1,5 @@
 // Add optional click button for music so its not in your face annoying 
+
 // level 2: optional click option for SFX; --> ADD SFX to each button click 
 
 // add smooth scroll, on button/submit move to next section
@@ -12,7 +13,8 @@
 // 2. Option 2: Program will spit out any random letter and any random word
 // 3. iterate through the entire alphabet grabbing a random word for each
 
-// Creates an letter object containing an array of all 24 letters in the alphabet which contains within it objects of different words and their examples as their key value pairs
+// Creates an letter object containing an array of all 26 letters in the alphabet which contains within it objects of different words and their examples as their key value pairs
+
 const letter = {
 
     A: [ 
@@ -57,7 +59,7 @@ const letter = {
 
         {
             word: 'czar',
-            example: 'Toronto is hiring a Transit Czar...to do what exactly? Where was this years ago? We needed that relief line years ago! Crazy...'
+            example: 'Toronto is hiring a Transit Czar...to do what exactly? We need a relief line years ago!'
         },
 
         {
@@ -515,25 +517,45 @@ $(function () {
             $('.example-text').html(`<h2>${myApp.result.example}</h2>`);
         });
 
+        $('.another-user-example').removeClass('view');
+        $('.alphabet-button').addClass('hidden');
+
     });
 
 
 ////This function will go through the alphabet and get a random word from each letter array
-//==============================================================
+//========================================================
+
+// myApp.counter = 0;
 
 $('.alphabet').on('click', function () {
     
-    //creates a new array from the letters object (MAKE DRY)
-        const newLetterArray = Object.keys(letter);
+    $('.alphabet-button').removeClass('hidden');
 
-        for (let i = 0; i < newLetterArray.length; i++) {
-            // this variable will grab each letter in the array in order 
-            const currentLetter = newLetterArray[i];
-            //this gives us all random words from A-Z
-            const randomWord = letter[currentLetter][Math.floor(Math.random() * letter[currentLetter].length)];
-           
-            alert(`${currentLetter} is for ${randomWord.word}. ${randomWord.example}`);
+        // $('.alphabet-button').on('click', function () {
 
+            for (let i = 0; i < myApp.newLetterArray.length; i++) {
+                // this variable will grab each letter in the array in order  
+                const currentLetter = myApp.newLetterArray[i];
+                // console.log(currentLetter);
+
+                //this gives us all random words from A-Z in an object
+                const randomWord = letter[currentLetter][Math.floor(Math.random() * letter[currentLetter].length)];
+
+                alert(`The letter ${currentLetter} is for ${randomWord.word}. ${randomWord.example}`);
+
+                // $('.result').append(`<strong>${currentLetter}</strong> is for ${randomWord.word}, ${randomWord.example} `);
+            
+                // alert(randomWord);
+
+        // });
+            // removes example button from user choice once alphabet option is selected
+            $('.another-user-example').removeClass('view');
+        }  
+    });
+        
+            //code below would add the entire alphabet to the html
+            // $('.result').append(`<strong>${currentLetter}</strong> is for ${randomWord.word}. ${randomWord.example} `);
 
 
 
@@ -544,8 +566,6 @@ $('.alphabet').on('click', function () {
             //     icon: "info",
             //     button: "Press me for the next letter in the Alphabet",
             // });
-        }  
-    });
             // console.log(randomWord);
             // $('.result').html(`<h2>${randomWord}</h2><h3></h3><h4>Type in a new letter!</h4>`)
             // alphabetArray = [];
@@ -557,6 +577,10 @@ $('.alphabet').on('click', function () {
                     // $('.alphabet').click(function () {
                     //     $('.result').html(newLetterArray.pop());
                     // });
+
+
+
+
 //==============================================================
 // This function will accept a user's input (a letter and selects a random word generated from the letter array chosen)
 // ============================================================
@@ -621,6 +645,7 @@ $('form').on('submit', function (e) {
                 });
 
                 $('.example-text').addClass('hidden');
+                $('.alphabet-button').addClass('hidden');
                 
             });
         });
