@@ -1,13 +1,4 @@
-// Add optional click button for music so its not in your face annoying 
-
-// level 2: optional click option for SFX; --> ADD SFX to each button click 
-
-// add smooth scroll, on button/submit move to next section
-
-// animations to button clicks and final end result
-    // create an option where a user can select a random word instead of one of their choice   
-
-
+//E-Learning app to teach children the alphabet...based off the worst alphabet book ever
 
 // 1. Option 1: User input a value (must be a letter from A-Z) Program will spit out a random word that starts with that letter
 // 2. Option 2: Program will spit out any random letter and any random word
@@ -519,13 +510,10 @@ $(function () {
 
         $('.another-user-example').removeClass('view');
         $('.alphabet-button').addClass('hidden');
-
     });
-
 
 ////This function will go through the alphabet and get a random word from each letter array
 //========================================================
-
 // myApp.counter = 0;
 
 $('.alphabet').on('click', function () {
@@ -544,8 +532,8 @@ $('.alphabet').on('click', function () {
 
                 alert(`The letter ${currentLetter} is for ${randomWord.word}. ${randomWord.example}`);
 
-                // $('.result').append(`<strong>${currentLetter}</strong> is for ${randomWord.word}, ${randomWord.example} `);
-            
+                // $('.result').html(`<strong>${currentLetter}</strong> is for ${randomWord.word}, ${randomWord.example} `);
+                     
                 // alert(randomWord);
 
         // });
@@ -578,20 +566,11 @@ $('.alphabet').on('click', function () {
                     //     $('.result').html(newLetterArray.pop());
                     // });
 
-
-
-
 //==============================================================
 // This function will accept a user's input (a letter and selects a random word generated from the letter array chosen)
 // ============================================================
 
-// myApp.userInput = $('input').val();
-// myApp.userLetter = myApp.userInput.toUpperCase();
-// myApp.userChoice = letter[myApp.userLetter];
-
-
 $('form').on('submit', function (e) {
-
         subApp = {};
 
         $('.example').addClass('view');
@@ -630,14 +609,12 @@ $('form').on('submit', function (e) {
             //adds the div to give user option to select another word from the same intial letter
             $('.another-user-example').addClass('view');
         
-            nextExample = $('.another-user-example').on('click', function (e) {
+                nextExample = $('.another-user-example').on('click', function (e) {
 
                 // gets a different Word
                 subApp.anotherOne = subApp.userChoice[Math.floor(Math.random() * subApp.userChoice.length)]
 
-
-
-                $('.result').html(`<h3>Another word for "${subApp.userLetter}" is ${subApp.anotherOne.word}. </h3>`);
+                    $('.result').html(`<h1>${subApp.userLetter}</h1><h3>Another word for "${subApp.userLetter}" is ${subApp.anotherOne.word}. </h3>`);
 
                 subApp.hideExample = $('.example').on('click', function (e) {
                     $('.user-example-text').toggleClass('hidden');
@@ -650,76 +627,3 @@ $('form').on('submit', function (e) {
             });
         });
     });
-    
-    
-    
-    
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const questions = [
-//     ['How many weeks in the HackerYou Bootcamp?', 9],
-//     ['How many projects total', 7],
-//     ['How many questions in this quiz including this one so far?', 3]
-// ];
-// var correctAnswers = 0;
-// var question;
-// var answer;
-// var response;
-
-
-// $(function () {
-
-// function print(message) {
-//     document.write(message);
-// }
-
-// for (let i = 0; i < questions.length; i++) {
-//     question = questions[i][0];
-//     answer = questions[i][1];
-//     response = prompt(question);
-//     response = parseInt(response);
-//     if (response === answer) {
-//         correctAnswers += 1;
-//     }
-// }
-
-// html = "You got " + correctAnswers + " question(s) right out of " + questions.length + " questions."
-// print(html);
-
-// });
-
-// $('h1').on('click', function (e) {
-//     e.preventDefault();
-
-//     $('h1').text('New h1 TEXT!!!');
-
-// })
-
-
-// });
-
-
-    // function doStuff(thing) {
-        // TODO: finish this function
-        // return;
-    // };
