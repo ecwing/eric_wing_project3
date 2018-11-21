@@ -534,7 +534,7 @@ $(function () {
 
 $('.alphabet').on('click', function () {
     
-    $('.alphabet-button').removeClass('hidden');
+    // $('.alphabet-button').removeClass('hidden');
 
         // $('.alphabet-button').on('click', function () {
 
@@ -546,43 +546,24 @@ $('.alphabet').on('click', function () {
                 //this gives us all random words from A-Z in an object
                 const randomWord = letter[currentLetter][Math.floor(Math.random() * letter[currentLetter].length)];
 
-                alert(`The letter ${currentLetter} is for ${randomWord.word}. ${randomWord.example}`);
-
 
                 // $('.result').html(`<h1>${randomWord}</h1></strong> is for ${randomWord.word}, ${randomWord.example}`);
                      
                 console.log(randomWord);
-                // alert(randomWord);
+
+                const letterTimer = setTimeout(function () {
+                    $(".result").html(
+                        `<h1>${currentLetter}</h1></strong> is for ${randomWord.word}, ${
+                        randomWord.example
+                        }`
+                    );
+                }, 4000 * (i + 1));
 
         // });
             // removes example button from user choice once alphabet option is selected
             $('.another-user-example').removeClass('view');
         }  
     });
-        
-            //code below would add the entire alphabet to the html
-            // $('.result').append(`<strong>${currentLetter}</strong> is for ${randomWord.word}. ${randomWord.example} `);
-
-
-
-
-            // swal ({
-            //     title: `The letter ${currentLetter} is for ${randomWord.word}`,
-            //     text: `${randomWord.example}`,
-            //     icon: "info",
-            //     button: "Press me for the next letter in the Alphabet",
-            // });
-            // console.log(randomWord);
-            // $('.result').html(`<h2>${randomWord}</h2><h3></h3><h4>Type in a new letter!</h4>`)
-            // alphabetArray = [];
-            // const ABC = [alphabetArray.push(randomWord)];
-            
-            // console.log(ABC);
-     
-        // $('.result').html(`<h2>${result.word}</h2><h3></h3><h4>Type in a new letter!</h4>`)
-                    // $('.alphabet').click(function () {
-                    //     $('.result').html(newLetterArray.pop());
-                    // });
 
 //==============================================================
 // This function will accept a user's input (a letter and selects a random word generated from the letter array chosen)
